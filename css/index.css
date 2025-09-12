@@ -1,7 +1,9 @@
 :root{
     --aqua:#1dd2c8;
 }
-body{font-family: "Open Sans", sans-serif;}
+body{font-family: "Open Sans", sans-serif;
+background: white;
+}
 /* Colors */
 .bgaqua{background:var(--aqua);}
 #bgblue{    background: #42b3e5;}
@@ -173,12 +175,15 @@ display: block;
 }
 .cards2 button{width:150px;}
 /* gallery-part */
-.gallery .images {
+.gallery .images,.card-part {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
   }
-  
+  .card-part{
+    display: flex;
+flex-direction: column;
+  }
   .gallery .images img {
     max-width: 100%; 
     width:504px;
