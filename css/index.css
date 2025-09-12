@@ -88,7 +88,6 @@ align-items: center;
 .menu-mobile-bar{display: inline-block;}
 /* first slider */
 .slider{
-    background-color: white;
     display: flex;
    align-items: center;
    justify-content: space-between;
