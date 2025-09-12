@@ -1,0 +1,300 @@
+:root{
+    --aqua:#1dd2c8;
+}
+body{font-family: "Open Sans", sans-serif;}
+/* Colors */
+.bgaqua{background:var(--aqua);}
+#bgblue{    background: #42b3e5;}
+.layer{background:#1dd2c9b9; 
+height:40vh;
+display: flex;
+flex-direction: column;
+}
+#bgdarkblue{    background: #4baabc;}
+.bgtransparent{background: transparent;}
+.head-hissemiz{ background: white;}
+/* text style part */
+.txtgray{color:#7a7b86;}
+.txtlightgray{color:#BDBDBD;}
+.txtag{color:white;}
+.txtaqua{color:var(--aqua);}
+.txtcenter{text-align: center;}
+.bold{font-weight: bold;}
+/* border style */
+.bordernone{border:none;}
+.borderwhite{border:2px solid white;}
+.circle{border-radius:70px;
+    border:9px solid #d2f6f4;
+ padding:30px;
+}
+.borderaqua{border: 1px solid var(--aqua);}
+.border-radius{ border-radius: 2px;}
+/* line part */
+hr{
+    width: 50px;
+}
+
+.displayblock{display: block;}
+/* background-images */
+#banner3{background: url('../img/banner3.jpg') center/cover;
+    height:70vh;
+  position: relative;
+}
+img{max-width:100%;}
+
+.size200{width:200px;}
+    #bghero{    background:url('../img/hero1.jpg') 50% 35%/cover; }
+.fontsize30{font-size:30px;}
+.fontsize40{font-size:40px;}
+.txtcenter{text-align: center;}
+
+/* contact information */
+.contact-info, .head-hissemiz,.layer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info{
+padding:10px;
+}
+/* PHONE INFORMATION */
+.tel-info {
+    font-size:20px ;
+    padding:0 15px;
+}
+.search-hissesi,.flagler {
+    padding:0 30px;
+}
+
+/* flag part */
+.flagler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+font-size: 12px;
+}
+.flagler a{
+  padding:10px;
+}
+/* menu hissemiz */
+.head-hissemiz{
+    display: flex;
+    justify-content:space-between;
+align-items: center;
+
+}
+.menu-mobile-bar{display: inline-block;}
+/* first slider */
+.slider{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+.banner-txt{
+    position:absolute;
+    flex-wrap: wrap; /* kiçik ekranlarda aşağı düşsün */
+    
+    top:50%;
+    left:10%;
+}
+.banner-txt h2{
+    font-size:30px;
+    width:59%;
+}
+.banner-txt a,.latest-news a{
+    padding:0 15px;
+    
+}
+.banner-txt a{
+    display: block;
+    width:200px;
+    font-size:20px;
+}
+/* Form part */
+
+ .form-part-mobile form{
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    padding:50px 0;
+    overflow: hidden; 
+    padding:10px;
+    margin:auto;
+}
+.form-part-mobile {
+    position: relative;
+  }
+  
+  .form-part-mobile .form-clip { 
+    position: absolute; 
+    top: -20px; 
+    right: 0px; 
+  }
+ 
+  .form-clip span{
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;}
+.form-part label,
+.form-part-mobile label {
+  display: block;
+  margin-bottom: 15px;
+}
+.form-part-mobile input,
+.form-part-mobile select {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+.form-part-mobile input,
+.form-part-mobile select {
+display: block;
+}
+/* first-cards part */
+.clip-circle { 
+    display:flex; 
+    justify-content:center;
+     align-items:center; 
+     width:60px; 
+     border-radius:50%;
+    }
+
+.card-part{text-align:center ;}
+.cards img:hover{border:var(--aqua);}
+/* second cards-part */
+.lab,.checkup,.otherclinic{padding:20px;}
+.yazilar-lab,.yazilar-checkup,.yazilar-otherclinic{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+/* first section */
+footer{
+    background:url(../img/world-map.png) center rgb(122, 123, 134)}
+    footer img{width:120px;}
+    .Navigation,.OurSercices,.Social-Medicana{
+        display:flex; 
+   flex-direction: column;
+    }
+   footer a:hover,.deskopt-menu li:hover{
+    color:var(--aqua);
+   }
+/* display none parts of mobile */
+.form-part{display:none;}
+.search-hissesi { display: none;}
+.deskopt-menu,.icons{display:none}
+@media only screen and (min-width: 768px) {
+    /* display none parts  of deskopt */
+    .menu-mobile-bar{ display: none;}
+    .form-part-mobile{display:none;}
+    .deskopt-menu ul{
+        display: flex;
+        justify-content: space-between;
+        gap:15px;
+    }
+    #logo img {
+        max-height:50px;
+      }
+/* SEARCH PART */
+.search-hissesi ,.cards,.cards2,.cards-head,.text-place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.search-hissesi button{
+text-transform: uppercase;
+}
+.search-hissesi .text-place input{
+width:350px;
+}
+.search-hissesi .text-place{
+    padding:10px;
+    border-radius: 2px;
+background: #ffffff50;
+}
+.deskopt-menu,.icons{display:block;}
+
+/* Form part */
+.form-part{
+    display: block;
+    position: relative;
+    top:65%;
+    left:10%;
+    width:900px;
+    padding:20px;
+ }
+ .form-part input,
+.form-part select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+  .form-clip { margin-bottom:10px; }
+  .formfirstline,
+  .formsecondline {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+    .form-clip { 
+        position: absolute; 
+        top: -25px; 
+        right:0; 
+     }
+/* slider part */
+.banner-txt{
+    max-width:80%;
+}
+  /* First cards part */
+.cards-head{
+    display:flex;
+    flex-direction: column;
+}
+.buton1{
+    display: flex;
+margin: auto;
+}
+.card-part,.cards2{
+    padding:80px 0;
+}
+.card-part{
+    padding-top: 300px;
+}
+/* second cards part */
+.lab,.checkup,.otherclinic{
+padding:20px;
+   width:350px;
+}
+.center{    display:flex;
+    justify-content: center;
+    align-items: center;}
+.container{
+    display:flex;
+    flex-direction: column;
+    max-width:1200px;
+    margin:auto;
+}
+/* gallery-part */
+.images{
+    display: flex;
+}
+article{display: flex;
+    width:530px;
+}
+
+.Departments{
+    display: flex;
+    gap:30px;
+}
+footer{display:flex ;
+    flex-direction: column;
+flex-wrap: wrap;}
+
+
+}
