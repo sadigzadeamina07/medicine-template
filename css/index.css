@@ -2,7 +2,7 @@
     --aqua:#1dd2c8;
 }
 body{font-family: "Open Sans", sans-serif;
-background-color: white;
+background-color: white!important;
 }
 /* Colors */
 .bgaqua{background:var(--aqua);}
