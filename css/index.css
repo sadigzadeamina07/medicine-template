@@ -89,12 +89,10 @@ align-items: center;
     display: flex;
    align-items: center;
    justify-content: space-between;
-   
 }
 .banner-txt{
     position:absolute;
-    flex-wrap: wrap; /* kiçik ekranlarda aşağı düşsün */
-    
+ 
     top:50%;
     left:10%;
 }
@@ -110,6 +108,7 @@ align-items: center;
     display: block;
     width:200px;
     font-size:20px;
+
 }
 /* Form part */
 
@@ -173,6 +172,19 @@ display: block;
     gap:10px;
 }
 .cards2 button{width:150px;}
+/* gallery-part */
+.gallery .images {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  
+  .gallery .images img {
+    max-width: 100%; 
+    width:504px;
+    display: block;
+  }
+  
 /* first section */
 footer{
     background:url(../img/world-map.png) center rgb(122, 123, 134)}
@@ -289,6 +301,7 @@ padding:20px;
 /* gallery-part */
 .images{
     display: flex;
+    flex-direction: row;
 }
 article{display: flex;
     width:530px;
