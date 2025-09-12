@@ -298,6 +298,7 @@ padding:20px;
     justify-content: center;
     align-items: center;}
 .container{
+    background: white;
     display:flex;
     flex-direction: column;
     max-width:1200px;
