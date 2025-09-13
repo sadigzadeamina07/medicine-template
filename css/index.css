@@ -88,6 +88,7 @@ align-items: center;
 .menu-mobile-bar{display: inline-block;}
 /* first slider */
 .slider{
+    background-color: white;
     display: flex;
    align-items: center;
    justify-content: space-between;
@@ -152,7 +153,7 @@ align-items: center;
   border-radius: 4px;
 }
 .form-part-mobile input,
-.form-part-mobile select{
+.form-part-mobile select {
 display: block;
 }
 /* first-cards part */
@@ -164,9 +165,7 @@ display: block;
      border-radius:50%;
     }
 
-.card-part{
-text-align:center;
-}
+.card-part{text-align:center ;}
 .cards img:hover{border:var(--aqua);}
 /* second cards-part */
 .lab,.checkup,.otherclinic{padding:20px;}
@@ -286,9 +285,11 @@ background: #ffffff50;
 margin: auto;
 }
 .card-part,.cards2{
-    padding:200px 0;
+    padding:80px 0;
 }
-
+.card-part{
+    padding-top: 300px;
+}
 /* second cards part */
 .lab,.checkup,.otherclinic{
 padding:20px;
@@ -297,13 +298,13 @@ padding:20px;
 .center{    display:flex;
     justify-content: center;
     align-items: center;}
-/* .container{
+.container{
     background: white;
     display:flex;
     flex-direction: column;
     max-width:1200px;
     margin:auto;
-} */
+}
 /* gallery-part */
 .images{
     display: flex;
