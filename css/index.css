@@ -24,7 +24,7 @@ flex-direction: column;
 .bold{font-weight: bold;}
 /* border style */
 .bordernone{border:none;}
-.borderwhite{border:2px solid white;}
+.borderwhite{border:1px solid white;}
 .circle{border-radius:70px;
     border:9px solid #d2f6f4;
  padding:30px;
@@ -51,7 +51,8 @@ img{max-width:100%;}
 .txtcenter{text-align: center;}
 
 /* contact information */
-.contact-info, .head-hissemiz,.layer{
+/* display flex center */
+.contact-info, .head-hissemiz,.layer,.form-clip span{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +84,6 @@ font-size: 12px;
     display: flex;
     justify-content:space-between;
 align-items: center;
-
 }
 .menu-mobile-bar{display: inline-block;}
 /* first slider */
@@ -95,7 +95,6 @@ align-items: center;
 }
 .banner-txt{
     position:absolute;
- 
     top:50%;
     left:10%;
 }
@@ -114,11 +113,8 @@ align-items: center;
 
 }
 /* Form part */
-
  .form-part-mobile form{
-    display: flex;
     gap:20px;
-    flex-direction: column;
     padding:50px 0;
     overflow: hidden; 
     padding:10px;
@@ -136,9 +132,6 @@ align-items: center;
  
   .form-clip span{
         padding:10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 56px;}
 .form-part label,
 .form-part-mobile label {
@@ -158,9 +151,6 @@ display: block;
 }
 /* first-cards part */
 .clip-circle { 
-    display:flex; 
-    justify-content:center;
-     align-items:center; 
      width:60px; 
      border-radius:50%;
     }
@@ -174,28 +164,35 @@ display: block;
     flex-direction: column;
     gap:10px;
 }
+.cards2 p{padding:0 0 20px 0;}
+.cards2 img{padding:0 0 5px 0;}
+.cards2 hr{margin:0;}
+.cards2 button{padding:5px 12px;}
 .cards2 button{width:150px;}
+.lab button:hover{background: white; color:#42b3e5}
+.checkup button:hover,.layer button:hover,.txt-area button:hover{
+    background: white; 
+    color:var(--aqua);}
+.otherclinic button:hover{background: white; color:#4baabc;}
 /* gallery-part */
 .gallery .images,.card-part {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
   }
-  .card-part{
-    display: flex;
-flex-direction: column;
-  }
   .gallery .images img {
     max-width: 100%; 
     width:504px;
     display: block;
   }
-  
-/* first section */
+  /* lastest new part  */
+
+/* footer part */
 footer{
     background:url('../img/world-map.png') center rgb(122, 123, 134)}
     footer img{width:120px;}
-    .Navigation,.OurSercices,.Social-Medicana{
+    /* flex direction column */
+    .Navigation,.OurSercices,.Social-Medicana, .card-part, .form-part-mobile form{
         display:flex; 
    flex-direction: column;
     }
@@ -208,9 +205,11 @@ footer{
     margin-right: auto;
   }
 /* display none parts of mobile */
+.search-hissesi{display:none;}
+.deskopt-menu{ display:none;}
+.icons{ display:none;}
+.deskopt-image{ display:none;}
 .form-part{display:none;}
-.search-hissesi { display: none;}
-.deskopt-menu,.icons{display:none}
 @media only screen and (min-width: 768px) {
     /* display none parts  of deskopt */
     .menu-mobile-bar{ display: none;}
@@ -224,7 +223,8 @@ footer{
         max-height:50px;
       }
 /* SEARCH PART */
-.search-hissesi ,.cards,.cards2,.cards-head,.text-place{
+/* flex center */
+.search-hissesi ,.cards,.cards2,.cards-head,.text-place,.center{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,9 +295,6 @@ margin: auto;
 padding:20px;
    width:350px;
 }
-.center{    display:flex;
-    justify-content: center;
-    align-items: center;}
 .container{
     background: white;
     display:flex;
@@ -313,12 +310,11 @@ padding:20px;
 article{display: flex;
     width:530px;
 }
-
 .Departments{
     display: flex;
     gap:30px;
 }
-footer{display:flex ;
+footer{display:flex;
     flex-direction: column;
 flex-wrap: wrap;}
 
