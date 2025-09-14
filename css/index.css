@@ -192,7 +192,7 @@ footer{
     background:url('../img/world-map.png') center rgb(122, 123, 134)}
     footer img{width:120px;}
     /* flex direction column */
-    .Navigation,.OurSercices,.Social-Medicana, .card-part, .form-part-mobile form{
+    .Navigation,.OurSercices,.Social-Medicana, .card-part,.cards2, .form-part-mobile form{
         display:flex; 
    flex-direction: column;
     }
