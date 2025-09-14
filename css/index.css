@@ -2,7 +2,7 @@
     --aqua:#1dd2c8;
 }
 body{font-family: "Open Sans", sans-serif;
-background-color: white!important;
+background-color: white;
 }
 /* Colors */
 .bgaqua{background:var(--aqua);}
@@ -193,7 +193,7 @@ flex-direction: column;
   
 /* first section */
 footer{
-    background:url(../img/world-map.png) center rgb(122, 123, 134)}
+    background:url('../img/world-map.png') center rgb(122, 123, 134)}
     footer img{width:120px;}
     .Navigation,.OurSercices,.Social-Medicana{
         display:flex; 
