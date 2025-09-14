@@ -8,7 +8,7 @@ background-color: white;
 .bgaqua{background:var(--aqua);}
 #bgblue{    background: #42b3e5;}
 .layer{background:#1dd2c9b9; 
-height:40vh;
+height:25vh;
 display: flex;
 flex-direction: column;
 }
@@ -51,6 +51,7 @@ img{max-width:100%;}
 .txtcenter{text-align: center;}
 
 /* contact information */
+
 /* display flex center */
 .contact-info, .head-hissemiz,.layer,.form-clip span{
     display:flex;
@@ -158,7 +159,16 @@ display: block;
 .card-part{text-align:center ;}
 .cards img:hover{border:var(--aqua);}
 /* second cards-part */
-.lab,.checkup,.otherclinic{padding:20px;}
+
+.cards2 > div {
+    width: 100%;   /* tam genişlik */
+    box-sizing: border-box; /* padding olsa da daşmasın */
+  }
+  
+.lab,.checkup,.otherclinic{
+  padding:20px;
+
+  }
 .yazilar-lab,.yazilar-checkup,.yazilar-otherclinic{
     display: flex;
     flex-direction: column;
@@ -224,7 +234,7 @@ footer{
       }
 /* SEARCH PART */
 /* flex center */
-.search-hissesi ,.cards,.cards2,.cards-head,.text-place,.center{
+.search-hissesi ,.cards,.cards-head,.text-place,.center{
     display: flex;
     justify-content: center;
     align-items: center;
